@@ -59,8 +59,7 @@ int main()
 				{
 					for (int l = i - 1; l >= 0; l--)
 					{
-						if (page
-								[l] == frames[k])
+						if (page[l] == frames[k])
 							temp[k]++;
 					}
 				}
