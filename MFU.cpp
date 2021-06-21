@@ -17,7 +17,7 @@ int main()
     cin >> m;
     int frames[m];
     for (int i = 0; i < m; i++)
-        frames[i] = INT_MAX;
+        frames[i] = INT_MIN;
 
     int hit = 0;
     int fault = 0;
@@ -65,10 +65,10 @@ int main()
                     }
                 }
 
-                int maxIndex = 999999999;
+                int maxIndex = n;
                 for (int k = 0; k < m; k++)
                 {
-                    if (temp[k] > temp[maxIndex] || maxIndex == -1)
+                    if (temp[k] > temp[maxIndex] || maxIndex == n)
                         maxIndex = k;
                 }
 
